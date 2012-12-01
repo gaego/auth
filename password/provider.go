@@ -7,12 +7,12 @@ Package auth/password provides a password strategy using bcrypt.
 
 auth/password stategy takes a POST with the following keys:
 
-Email (required)
-Password.New (required/optional)
-Password.Current (required/optional)
-Name.GivenName
-Name.FamilyName
-* (Any other Person attributes)
+  Email (required)
+  Password.New (required/optional)
+  Password.Current (required/optional)
+  Name.GivenName
+  Name.FamilyName
+  * (Any other Person attributes)
 
 Based on the supplied attributes auth/password will do one of three things:
 
