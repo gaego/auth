@@ -6,9 +6,9 @@ package profile
 
 import (
 	"appengine/datastore"
-	"github.com/scotch/aego/v1/context"
-	"github.com/scotch/aego/v1/ds"
-	"github.com/scotch/aego/v1/person"
+	"github.com/gaego/context"
+	"github.com/gaego/ds"
+	"github.com/gaego/person"
 	"testing"
 )
 

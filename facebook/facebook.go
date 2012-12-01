@@ -1,4 +1,4 @@
-// Copyright 2012 AEGo Authors. All rights reserved.
+// Copyright 2012 GAEGo Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
@@ -8,7 +8,7 @@ Package auth/facebook provides Facebook authentication
 package facebook
 
 import (
-	"github.com/scotch/aego/v1/auth/oauth2"
+	"github.com/gaego/auth/oauth2"
 )
 
 const (

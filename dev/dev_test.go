@@ -1,12 +1,12 @@
-// Copyright 2012 AEGo Authors. All rights reserved.
+// Copyright 2012 GAEGo Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
 package dev
 
 import (
-	"github.com/scotch/aego/v1/auth"
-	"github.com/scotch/aego/v1/context"
+	"github.com/gaego/auth"
+	"github.com/gaego/context"
 	"net/http"
 	"net/http/httptest"
 	"net/url"

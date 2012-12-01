@@ -1,4 +1,4 @@
-// Copyright 2012 AEGo Authors. All rights reserved.
+// Copyright 2012 GAEGo Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
@@ -11,7 +11,7 @@ Package auth/google provides Google authentication
 package google
 
 import (
-	"github.com/scotch/aego/v1/auth/oauth2"
+	"github.com/gaego/auth/oauth2"
 )
 
 type Provider struct {
@@ -48,7 +48,7 @@ func New(clientID, clientSecret, scope string) *Provider {
 // 	// a context/request is available.
 // 	cnfg, err := config.GetOrInsert(c, "auth", defaultCnfg)
 // 	if err != nil {
-// 		panic("hal/auth: an error occured while setting the config")
+// 		panic("auth: an error occured while setting the config")
 // 	}
 // 	baseURL = cnfg.Values["BaseURL"]
 // 	loginURL = cnfg.Values["LoginURL"]

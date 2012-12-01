@@ -1,4 +1,4 @@
-// Copyright 2012 AEGo Authors. All rights reserved.
+// Copyright 2012 GAEGo Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
@@ -11,8 +11,8 @@ import (
 	"appengine/urlfetch"
 	"code.google.com/p/goauth2/oauth"
 	"fmt"
-	"github.com/scotch/aego/v1/auth/profile"
-	"github.com/scotch/aego/v1/context"
+	"github.com/gaego/auth/profile"
+	"github.com/gaego/context"
 	"net/http"
 	"net/url"
 	"strings"

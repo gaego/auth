@@ -1,4 +1,4 @@
-// Copyright 2012 AEGo Authors. All rights reserved.
+// Copyright 2012 GAEGo Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
@@ -8,8 +8,8 @@ Package auth provides multi-provider Authentication.
 Example Usage:
 
   import (
-    "github.com/scotch/aego/v1/auth"
-    "github.com/scotch/aego/v1/auth/google"
+    "github.com/gaego/auth"
+    "github.com/gaego/auth/google"
   )
 
   // Register the Google Provider.
@@ -23,9 +23,9 @@ Example Usage:
 package auth
 
 import (
-	"github.com/scotch/aego/v1/auth/profile"
-	"github.com/scotch/aego/v1/context"
-	"github.com/scotch/aego/v1/user"
+	"github.com/gaego/auth/profile"
+	"github.com/gaego/context"
+	"github.com/gaego/user"
 	"net/http"
 	"strings"
 )
@@ -118,7 +118,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	// If we don't have a URL or an error then the user has been authenticated.
 	// Check the Profile for an ID and Provider.
 	if up.ID == "" || up.ProviderName == "" {
-		panic(`hal/auth: The Profile's "ID" or "ProviderName" is empty.` +
+		panic(`auth: The Profile's "ID" or "ProviderName" is empty.` +
 			`A Key can not be created.`)
 	}
 	if _, err = CreateAndLogin(w, r, up); err != nil {
