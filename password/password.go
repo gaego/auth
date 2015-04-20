@@ -6,12 +6,12 @@ package password
 
 import (
 	"appengine"
-	"code.google.com/p/go.crypto/bcrypt"
 	"errors"
 	"github.com/gaego/auth/profile"
 	"github.com/gaego/person"
 	"github.com/gaego/user"
 	"github.com/gaego/user/email"
+	"golang.org/x/crypto/bcrypt"
 )
 
 var (
